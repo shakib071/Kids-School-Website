@@ -1,0 +1,78 @@
+
+
+/* shared styles  */
+
+.display-flex{
+    display: flex;
+}
+
+
+
+
+/* body  section  */
+
+body{
+    width: 81%;
+    margin: 0 auto;
+}
+
+/* header styles  */
+
+
+/* nav styles   */
+
+nav{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title{
+    align-items: center;
+}
+
+.nav-school{
+    color: rgba(17, 17, 17, 1);
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.nav-img{
+    margin-right: 0.7rem;
+    max-width: 62px;
+    max-height: 62px;
+}
+
+.nav-items{
+    
+}
+
+.nav-lists li:first-child{
+    color: rgba(254, 163, 1, 1);
+}
+.nav-lists li:nth-child(2){
+    color: rgba(1, 172, 253, 1);
+}
+.nav-lists li:nth-child(3){
+    color: rgba(5, 212, 223, 1);
+}
+.nav-lists li:nth-child(4){
+    color:rgba(93, 88, 239, 1);
+}
+
+
+.nav-list{
+    list-style-type: none;
+    margin-right: 2rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+
+.nav-contact{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(254, 163, 1, 1);
+    font-size: 1.7rem;
+    font-weight: 600;
+    padding: 0.83rem 5rem;
+    border-radius: 1rem;
+}
