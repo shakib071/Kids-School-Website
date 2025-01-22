@@ -166,6 +166,7 @@ nav{
 
 .curriculam{
     padding: 0 140px;
+    margin: 0 auto;
     background-image: url(../Assets/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -262,7 +263,7 @@ nav{
 
 /* stories section  */
 .stories{
-    padding: 0 140px;
+    padding: 40px 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -272,6 +273,8 @@ nav{
     /* background: linear-gradient(to bottom, white, yellow); */
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 60px;
+    
     
 }
 
@@ -279,7 +282,7 @@ nav{
 .stories-container{
    display: grid;
    justify-content: space-between;
-   align-items: center;
+   align-items: safe;
    
    gap: 1.2rem;
     grid-template-columns: 2fr 1fr 1fr;
@@ -291,6 +294,8 @@ nav{
 .stories-container > div {
     background-color: white;
     border-radius: 1rem;
+    margin: 40px auto;
+    
 }
 .stories-card1{
     /* max-width:640px ;
@@ -322,11 +327,11 @@ nav{
 
 
 
-
 .stories-title{
     font-size: 1.5rem;
     font-weight: 800;
     color: rgba(0, 0, 0, 1);
+   
 }
 
 
@@ -357,7 +362,8 @@ nav{
 
 
 .storie1{
-    padding: 2.1rem 1.5rem;
+    padding: 0.4rem 1.5rem;
+    margin: 0;
     
 }
 
@@ -387,7 +393,7 @@ nav{
     padding: 16px 20px;
     margin: 0;
     position: relative;
-    top: -60px;
+    top: -40px;
 
 }
 
@@ -401,7 +407,7 @@ nav{
     padding: 10px 12px;
     margin: 0;
     position: relative;
-    top: -40px;
+    top: -46px;
 }
 
 
@@ -415,11 +421,11 @@ footer{
 
 .footer-container{
    
-    padding: 5% ;
+    padding: 7% ;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    /* justify-content: center; */
+    justify-content: space-between;
     align-items:start;
     gap: 70px;
 }
@@ -486,8 +492,8 @@ footer{
         margin: 10px auto;
     }
 
-    .nav{
-        padding: 0 px;
+    nav{
+        padding: 0 10px;
     }
 
     .nav-icon{
@@ -505,6 +511,15 @@ footer{
     .banner{
         flex-direction: column-reverse;
         gap: .5rem;
+        padding: 0 0px;
+    }
+    .banner{
+        
+        margin-top: 1.25rem;
+        justify-content: space-between;
+        gap: 4rem;
+        align-items: center;
+      
     }
     .banner-details{
         /* align-items: center; */
@@ -523,6 +538,8 @@ footer{
         font-size: .92rem;
     }
 
+    /* curcicullam section  */
+
     .cur-card-container{
         align-items: center;
         grid-template-columns: repeat(1,1fr);
@@ -532,6 +549,10 @@ footer{
         padding: 0 10px;
     } 
     
+    .stories{
+        margin: 0;
+        padding: 0 auto;
+    }
 
     .stories-card1 {
         display: none;
@@ -540,13 +561,28 @@ footer{
     .stories-container{
         
         justify-content: center;
-        align-items: center;
+        align-items:safe;
          grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "card2 card3"
         "card4 card5"
         ;
      }
+     .stores-btn{
+       
+      
+        font-size: 1rem;
+      
+        padding: 0px 30px;
+        
+    
+    }
+     .btn-2{
+        font-size: 9px;
+        padding: 5px 11px;
+        top: -30px;
+        left: -10px;
+    }
 
      .footer-container{
         grid-template-columns: repeat(1,1fr);
