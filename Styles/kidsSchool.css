@@ -33,6 +33,16 @@
 }
 
 
+.section-title{
+    color: rgba(0, 0, 0, 1);
+    font-weight: 800;
+    font-size: 1.88rem;
+    text-align: center;
+    margin-top: 3.75rem;
+    /* margin-bottom: 5rem; */
+}
+
+
 
 /* body  section  */
 
@@ -120,6 +130,7 @@ nav{
     justify-content: space-between;
     gap: 4rem;
     align-items: center;
+  
 }
 
 
@@ -148,15 +159,106 @@ nav{
 
 
 
+ /* curicullam sectiion  */
 
 
+.curriculam{
+    
+    background-image: url(../Assets/bg.png);
+}
 
-/* responsive  */
+.cur-card-container{
+  display:  grid;
+  /* justify-content: space-between; */
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.8rem;
+  justify-content: space-between;
+  
+}
+
+.cur-card{
+    max-width: 367px;
+    text-align: center;
+    padding:50px 40px ;
+    border-radius: 19px;
+    
+}
+
+.l-grad-1{
+    background: linear-gradient(to bottom, rgba(222, 245, 255, 1) 0%, rgba(255, 255, 255, 0) 40%);
+    box-shadow: 2px 2px 8px rgba(222, 245, 255, 1);
+    
+}
+.l-grad-2{
+    background: linear-gradient(to bottom, rgba(255, 244, 220, 1) 0%, rgba(255, 255, 255, 0)40%);
+    box-shadow: 2px 2px 8px rgba(255, 244, 220, 1);
+}
+.l-grad-3{
+    background: linear-gradient(to bottom, rgba(238, 225, 255, 1) 0%, rgba(255, 255, 255, 0) 40%);
+    box-shadow: 2px 2px 8px rgba(238, 225, 255, 1);
+}
+
+.cur-img{
+    width: 137px;
+    height: 137px;
+}
+
+.cur-card-title{
+    font-weight: 800;
+    font-size: 1.53rem;
+    color: rgba(32, 32, 32, 1);
+}
+
+.cur-card-description{
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: rgba(128, 128, 128, 1);
+}
+
+.cur-btn{
+    border: none;
+    background-color: white;
+    font-size: 0.98rem;
+    font-weight: 800;
+    
+}
+
+.btn-c-1{
+    color: rgba(100, 200, 255, 1);
+}
+
+.btn-c-2{
+    color: rgba(240, 170, 0, 1);
+}
+
+.btn-c-3{
+    color: rgba(135, 0, 255, 1);
+}
+
+.next-btns{
+    justify-content: center;
+
+    margin-top: 80px;
+}
+
+.next-btn{
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(254, 163, 1, 1);
+    margin-right: 10px;
+    border: none;
+    padding: 17px 22px;
+    border-radius: 40px;
+}
+
+
+/* responsive for mobile */
 
 @media screen and (max-width:576px){
     .nav-contact,
     .nav-items,
-    .nav-school
+    .nav-school,
+    .next-btns
     {
         display: none;
     }
@@ -199,6 +301,10 @@ nav{
 
     .banner-description{
         font-size: .92rem;
+    }
+
+    .cur-card-container{
+        grid-template-columns: repeat(1,1fr);
     }
 
 
