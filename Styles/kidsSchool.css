@@ -77,7 +77,9 @@ nav{
     max-width: 62px;
     max-height: 62px;
 }
-
+/* .hel{
+    display: none;
+} */
 /* .nav-items{
     
 } */
@@ -476,6 +478,7 @@ footer{
 
 
 
+
 /* responsive for mobile */
 
 @media screen and (max-width:576px){
@@ -506,6 +509,8 @@ footer{
         width: 30px;
         height: 30px;
     }
+
+   
 
 
     .banner{
@@ -586,8 +591,16 @@ footer{
 
      .footer-container{
         grid-template-columns: repeat(1,1fr);
+        padding: 4% ;
      }
+
+ 
 
 
 }
 
+@media screen and (width>576px) {
+    hr{
+        display: none;
+    }
+}
