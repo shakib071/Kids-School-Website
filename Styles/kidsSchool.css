@@ -47,7 +47,7 @@
 /* body  section  */
 
 body{
-    width: 81%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -59,6 +59,7 @@ body{
 nav{
     justify-content: space-between;
     align-items: center;
+    padding: 0 140px;
 }
 
 .nav-title{
@@ -126,6 +127,7 @@ nav{
 
 
 .banner{
+    padding: 0 140px;
     margin-top: 1.25rem;
     justify-content: space-between;
     gap: 4rem;
@@ -163,7 +165,7 @@ nav{
 
 
 .curriculam{
-    
+    padding: 0 140px;
     background-image: url(../Assets/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -175,6 +177,7 @@ nav{
   grid-template-columns: repeat(3,1fr);
   gap: 1.8rem;
   justify-content: space-between;
+  align-items: center;
   
 }
 
@@ -259,9 +262,16 @@ nav{
 
 /* stories section  */
 .stories{
-    background-image: url(../Assets/bg.png);
+    padding: 0 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-image: url('../Assets/bg.png'); */
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(254, 163, 1, 1) 100%), url('../Assets/bg.png');  */
+    /* background: linear-gradient(to bottom, white, yellow); */
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 
 
@@ -269,6 +279,7 @@ nav{
    display: grid;
    justify-content: space-between;
    align-items: center;
+   
    gap: 1.2rem;
     grid-template-columns: 2fr 1fr 1fr;
    grid-template-areas: 
@@ -276,16 +287,20 @@ nav{
    "card1 card4 card5"
    ;
 }
-
+.stories-container > div {
+    background-color: white;
+    border-radius: 1rem;
+}
 .stories-card1{
     /* max-width:640px ;
     height: 630px; */
-   
+    
     grid-area: card1;
 }
 .stories-card2{
     /* max-width: 290px;
     height: 301px; */
+    
     grid-area: card2;
 }
 .stories-card3{
@@ -314,9 +329,10 @@ nav{
 }
 
 
-.storie1,.storie{
+/* .storie1,.storie{
     background-color: rgba(255, 255, 255, 1);
-}
+    border-radius: 1rem;
+} */
 
 .stories-description{
     font-size: 1rem;
@@ -330,30 +346,99 @@ nav{
     font-weight: 800;
 }
 
-.s-img1{
+.s-img1 ,.s-img{
    
     width: 100%;
+    height: auto;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
 }
 
-.s-img{
-    width: 100%;
+
+.storie1{
+    padding: 2.1rem 1.5rem;
     
 }
 
-.second{
-    display: flex;
-    grid-template-columns: repeat(2,1fr);
+.storie{
+    padding: 1rem 2rem;
+}
+
+.stores-btn{
+    border: none;
+    background-color: black;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 1);
+    padding: 10px 61px;
+    
+
 }
 
 
 
+/* footer section  */
 
+footer{
+    background-color: rgba(1, 172, 253, 1);
 
+}
 
+.footer-container{
+   
+    padding: 5% ;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    /* justify-content: center; */
+    align-items:start;
+    gap: 70px;
+}
 
+.f{
+    display: flex;
+    align-items:center;
+}
 
+.foot-title{
+    padding: 0;
+    margin: 0;
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: white;
+}
 
+.foot-des{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: white;
+}
 
+.abt-school{
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+}
+
+.ab-item{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: white;
+}
+
+.t-title{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.foot-img{
+    height: 40px;
+    width: 40px;
+    margin: 0;
+    border-radius: 4px;
+}
 
 
 
@@ -370,10 +455,12 @@ nav{
 
     body{
         width: 90%;
-        margin: 12px auto;
+        margin: 10px auto;
     }
 
- 
+    .nav{
+        padding: 0 px;
+    }
 
     .nav-icon{
         display: contents;
@@ -409,8 +496,33 @@ nav{
     }
 
     .cur-card-container{
+        align-items: center;
         grid-template-columns: repeat(1,1fr);
     }
+
+    .curriculam{
+        padding: 0 10px;
+    } 
+    
+
+    .stories-card1 {
+        display: none;
+    }
+
+    .stories-container{
+        
+        justify-content: center;
+        align-items: center;
+         grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "card2 card3"
+        "card4 card5"
+        ;
+     }
+
+     .footer-container{
+        grid-template-columns: repeat(1,1fr);
+     }
 
 
 }
